@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.mobile-cta {
+  cursor: pointer;
+  width: 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: black;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.navbar {
+  padding: 1em;
+  background-color: white;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #3877b6;
+  height: 100vh;
+  width: 66%;
+  padding: 1em;
+}
+
+nav .menu-exit {
+  cursor: pointer;
+  width: 20px;
+  float: right;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  padding: .5em;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.menu-btn {
+  display: block;
+}
+
+.hero-section .container {
+  text-align: center;
+}
+
+.hero-section .container .left-col p {
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: .2em;
+  color: gray;
+}
+
+.hero-section .container .left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.hero-cta .primary-cta {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  font-weight: bold;
+  border-radius: 5em;
+  color: white;
+  display: inline-block;
+  border: 2px solid var(--primary-color);
+  margin-top: -.3em;
+}
+
+.hero-cta .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+  color: black;
+}
+
+.hero-cta .watch-video-cta img {
+  margin-right: .5em;
+}
+
+.hero-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+.features-section {
+  background-color: #20272e;
+  color: white;
+}
+
+.features-section img {
+  display: none;
+}
+
+ul.features-list {
+  margin: 0;
+  padding: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+}
+
+ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.features-list li::before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.card-section {
+  background-color: var(--primary-color);
+}
+
+.card-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.card-section .container .card-body {
+  background-color: #006bd6;
+  margin: 0 2em 5em 2em;
+  padding: 2em 1em;
+  border-radius: 1em;
+  color: white;
+}
+
+.card-section .container .card-body img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006bd6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+}
+
+.contact-section form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+.contact-section input, .contact-section textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: .3em;
+}
+
+.contact-section input:focus, .contact-section textarea:focus {
+  outline: none;
+}
+
+.contact-section input[type="submit"] {
+  padding: .8em 2em;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5em;
+  margin-bottom: 5em;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: unset;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+/*# sourceMappingURL=main.css.map */
